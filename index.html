@@ -131,6 +131,14 @@ input{
             <h2 class="sr-only">COFFSYS</h2>
             <!--<div class="illustration"><i class="icon ion-ios-locked-outline"></i></div>-->
             
+            <div *ngIf="data_error" class="alert alert-danger alert-dismissible" role="alert">
+                <div class="alert-message">
+                    
+                </div>
+                <button type="button" (click)="close_alert()" class="close" data-dismiss="alert" aria-label="Close">
+                    <span aria-hidden="true">x</span>
+                </button>
+            </div>
             
 
             <div class="text-center">
@@ -155,6 +163,9 @@ input{
   </div>
   <div><div class="form-group"><button class="btn btn-primary btn-block" type="submit">GM</button></div>
   </div>
+    <div>
+      <div class="form-group"><button class="btn btn-primary btn-block" type="submit">GABO</button></div>
+    </div>
     </body>
 
 
